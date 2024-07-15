@@ -1,0 +1,189 @@
+@import "layouts.css";
+
+.go_whatsapp:hover{
+    cursor: pointer;
+}
+.logo-footer{
+    float: left;
+}
+.wave-footer{
+    height: 80%;
+}
+.text-white-blue{
+    color: white;
+    text-shadow: 3px 3px 2px var(--blue-b),-1px -1px 1px var(--blue-b);
+}
+.shadow-blue{
+    box-shadow: 3px 3px 2px var(--blue-b);
+}
+.text-white-red{
+    color: white;
+    text-shadow: 2px 2px 2px var(--red-b),-1px -1px 1px var(--red-b);
+}
+.text-green{
+    color: var(--green-b);
+}
+.text-blue{
+    color:rgb(19, 135, 221);
+    /* text-shadow: 1px 1px 1px var(--blue-b); */
+}
+.bg-blue{
+    background: rgb(48,150,225);
+}
+.text-white-border{
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
+/* :rgb(83,210,219);
+--green-b:rgb(4, 172, 184); */
+/* btns */
+.btn-green{
+    background: var(--green-b);
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
+.btn-green:hover{
+    background: var(--green);
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
+/* ----works---- */
+.cardWork{
+    position: relative;
+}
+.cardWorkFront{
+    border-radius: 2px;
+    overflow: hidden;
+    border:solid 2px rgb(181, 181, 181);
+}
+.cardWork .title{
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    z-index: 6;
+}
+.cardWork .text{
+    word-wrap: break-word;
+    width: 100%;
+}
+.cardWork:hover{
+    cursor:pointer;
+}
+.zoom {
+    transition: transform .5s;
+}
+.cardWork:hover img{
+    transform: scale(1.3);
+}
+.cardWork:hover .title-cut{
+    display: none;
+}
+.cardWork:hover .title-complete{
+    display: block;
+}
+.cardWork .expand{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0px 5px 0px 5px;
+    background: rgba(0, 0, 0, 0.14);
+    font-size: 20px;
+    z-index: 5;
+}
+/* ------services------ */
+/* card house */
+.card-house{
+    background:white;max-width:400px;margin:auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-house img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-bottom: 10px; */
+}
+
+.card-house .text{
+    padding:20px 40px 20px 40px;
+}
+
+.triangle-top-left{
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    z-index: 3;
+    height: 50px;
+}
+
+.triangle-top-right{
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    z-index: 3;
+    height: 50px;
+}
+
+.wall-left{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 5%;
+    height: 100%;
+    z-index: 3;
+}
+
+.wall-right{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 5%;
+    height: 100%;
+    z-index: 3;
+}
+
+
+
+
+@media (max-width:1200px) {
+    .wave-footer{
+        height: 50%;
+    }
+}
+
+@media (max-width:700px) {
+    .wave-footer{
+        height: 30%;
+    }
+}
+
+@media (max-width:400px) {
+    .wave-footer{
+        height: 15%;
+    }
+    .logo-footer{
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:350px) {
+    .wave-footer{
+        height: 10%;
+    }
+    .card-house .text{
+        padding:20px 30px 5px 30px;
+    }
+    .card-house img{
+        height: 200px;
+    }
+}

@@ -1,0 +1,57 @@
+.cardVideo.active{
+    border: 5px solid rgb(232, 232, 232);
+}
+
+.video_select_lg{
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+}
+
+.video_select_lg iframe{
+    width: 100%;
+    height:100%;
+}
+#video-modal{
+    width:100%;
+    height:700px;
+}
+@media (max-width: 1200px) {
+    #video-modal{
+        width:100%;
+        height:600px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #video-modal{
+        width:100%;
+        height:400px;
+        margin:0;
+    }
+    .video_select_lg{
+        max-width: 1000px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardVideo.active{
+        border: 1px solid border: var(--border);
+    }
+
+    #video-modal{
+        width:100%;
+        height:300px;
+        margin:0;
+    }
+}
+
+
+
+/* 576px
+576px
+768px
+992px
+1200px */

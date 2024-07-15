@@ -1,0 +1,21 @@
+
+.cardVideo .fa-play{
+    opacity:0.6;
+    text-shadow: 2px 2px 3px black;
+}
+
+.cardVideo .card-footer{
+    border-bottom-left-radius:15px;border-bottom-right-radius:15px;overflow:hidden;
+}
+.cardVideo .title{
+    padding: 0 10px 0 10px;
+}
+
+
+@media (max-width:350px) {
+    .cardVideo .title{
+        font-size: 10px;
+        padding: 0;
+    }
+
+}
